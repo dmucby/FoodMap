@@ -1,0 +1,19 @@
+{
+  "properties": [
+    {
+      "name": "rubbing_map.jwt.secret",
+      "type": "java.lang.String",
+      "description": "Description for rubbing_map.jwt.secret."
+    },
+    {
+      "name": "rubbing_map.jwt.expire",
+      "type": "java.lang.String",
+      "description": "Description for rubbing_map.jwt.expire."
+    },
+    {
+      "name": "spring.redis.client-type.lettuce.pool.max-active",
+      "type": "java.lang.String",
+      "description": "Description for spring.redis.client-type.lettuce.pool.max-active."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="88c7b21a-d1eb-45bc-95b6-e068fdc71961" />
+          <option name="name" value="rubbing" />
+          <option name="urls">
+            <array>
+              <option value="file://D:/自带文件/余悸/桌面/rubbing.sql" />
+            </array>
+          </option>
+          <option name="group" value="rubbing" />
+        </State>
+      </list>
+    </option>
+  </component>
+</project>
