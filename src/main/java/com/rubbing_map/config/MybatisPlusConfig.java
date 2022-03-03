@@ -19,4 +19,7 @@ public class MybatisPlusConfig {
         PaginationInterceptor paginationInterceptor = new PaginationInterceptor();
         return paginationInterceptor;
     }
+
+    // 注册乐观锁插件
+
 }

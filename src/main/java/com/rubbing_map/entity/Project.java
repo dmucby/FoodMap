@@ -1,25 +1,25 @@
 package com.rubbing_map.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import com.baomidou.mybatisplus.annotation.*;
+import lombok.*;
 import lombok.experimental.Accessors;
 
 import javax.validation.constraints.NotBlank;
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * @author 余悸
  */
+
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 @TableName("m_project")
 public class Project implements Serializable {
-
-    private static final long serialVersionUID = 1L;
 
     @TableId(value = "pid",type = IdType.AUTO)
     private Long pid;
@@ -27,9 +27,14 @@ public class Project implements Serializable {
     @NotBlank(message = "项目名不能为空")
     private String name;
 
-    private String createDate;
+    @TableField(fill = FieldFill.INSERT)
+    private Date create_date;
 
-    private String lastDate;
+    @TableField(fill = FieldFill.UPDATE)
+    private Date last_date;
+
+    @Version
+    private  Integer version;
 
     private String userid;
 

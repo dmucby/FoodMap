@@ -9,5 +9,4 @@ import com.rubbing_map.entity.User;
  * @author 余悸
  */
 public interface ProjectService extends IService<Project> {
-   Project[] listByIds(QueryWrapper<User> userid);
 }

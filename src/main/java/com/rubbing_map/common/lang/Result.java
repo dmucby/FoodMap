@@ -18,6 +18,8 @@ public class Result  implements Serializable {
         return succ(0, "ok", data);
     }
 
+
+
     public static Result succ(int code, String msg, Object data) {
         Result r = new Result();
         r.setCode(code);
@@ -27,7 +29,7 @@ public class Result  implements Serializable {
     }
 
     public static Result fail(String msg) {
-        return fail(-1, msg, null);
+        return fail(-1, "系统繁忙，请稍后重试！", null);
     }
 
     public static Result fail(String msg, Object data) {

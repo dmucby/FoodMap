@@ -15,8 +15,4 @@ import org.springframework.stereotype.Service;
 @Service
 public class ProjectServiceImpl extends ServiceImpl<ProjectMapper, Project> implements ProjectService {
 
-    @Override
-    public Project[] listByIds(QueryWrapper<User> userid) {
-        return new Project[0];
-    }
 }
