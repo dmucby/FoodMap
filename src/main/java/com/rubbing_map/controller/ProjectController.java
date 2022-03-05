@@ -60,7 +60,6 @@ public class ProjectController {
 
     @PostMapping("/editUserProjectsList")
     public Result UserProjectList(@Validated @RequestBody EditUserProjectsList edit){
-
         Project project = new Project();
         project.setUserid(edit.getUserid());
         project.setPid(edit.getProject_info().getPid());
