@@ -1,14 +1,13 @@
 # FoodMap
 ## 技术栈：
 
-> - SpringBoot
-> - mybatis plus
-> - shiro
-> - Tomcat
-> - MySql
-> - redis
-> - jwt
-
+- SpringBoot
+- mybatis plus
+- shiro
+- Tomcat
+- MySql
+- redis
+- jwt
 
 
 ## 解释：
